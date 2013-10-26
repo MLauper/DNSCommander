@@ -30,7 +30,7 @@ public class Application extends Controller {
         "</figcaption>"+
         "</figure>"+
         "</section>"+
-        "</div>");
+
         Html outputHTML = new Html(htmlText);
         return ok(index.render("Your new application is ready.", outputHTML));
     }
