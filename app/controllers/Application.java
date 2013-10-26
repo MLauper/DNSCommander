@@ -29,7 +29,7 @@ public class Application extends Controller {
         "<footer class=\"more\"><a href=\"#\">Read More &raquo;</a></footer>" +
         "</figcaption>"+
         "</figure>"+
-        "</section>"+
+        "</section>");
 
         Html outputHTML = new Html(htmlText);
         return ok(index.render("Your new application is ready.", outputHTML));
