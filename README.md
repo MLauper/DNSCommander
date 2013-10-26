@@ -1,4 +1,0 @@
-DNSCommander
-============
-
-DNS Commander
