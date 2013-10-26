@@ -57,9 +57,7 @@ public class Application extends Controller {
 
         return ok(query.render());
     }
-few
 
-      // fe
 
 
 }
