@@ -58,12 +58,6 @@ public class Application extends Controller {
         return ok(query.render());
     }
 
-    public static Result queryDNS(){
-
-        return ok("DNS Query Result: " );
-    }
-
-
 
 
 }
