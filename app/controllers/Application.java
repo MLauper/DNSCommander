@@ -58,6 +58,6 @@ public class Application extends Controller {
         return ok(query.render());
     }
 
-
+          %
 
 }
