@@ -1,5 +1,6 @@
 package controllers;
 
+import org.xbill.DNS.Address;
 import play.*;
 import play.api.templates.Html;
 import play.libs.Scala;
@@ -10,6 +11,9 @@ import scala.collection.mutable.StringBuilder;
 import views.html.*;
 import views.html.index;
 import views.html.query;
+
+import java.io.IOException;
+import java.net.UnknownHostException;
 
 public class Application extends Controller {
 
@@ -56,6 +60,10 @@ public class Application extends Controller {
          // TODO Define GUI for DNS Query Generator
 
         return ok(query.render());
+    }
+
+    public static Result queryDNSAHost(String host) throws UnknownHostException,IOException {
+        return ok(Address.getByName("www.google.com").toString());
     }
 
 
